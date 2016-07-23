@@ -31,24 +31,36 @@ public class CConverter implements IConverter {
 
     public CConverter(String strFacSize)
     {
-        if (strFacSize == "4TB")
+        if (strFacSize == "4 TB")
             calFromTB(4);
-        else if (strFacSize == "2TB")
+        else if (strFacSize == "2 TB")
             calFromTB(2);
-        else if (strFacSize == "1TB")
+        else if (strFacSize == "1 TB")
             calFromTB(1);
-        else if (strFacSize == "500GB")
+        else if (strFacSize == "500 GB")
             calFromGB(500);
-        else if (strFacSize == "250GB")
+        else if (strFacSize == "250 GB")
             calFromGB(250);
-        else if (strFacSize == "125GB")
+        else if (strFacSize == "125 GB")
             calFromGB(125);
-        else if (strFacSize == "480GB")
+        else if (strFacSize == "480 GB")
             calFromGB(480);
-        else if (strFacSize == "240GB")
+        else if (strFacSize == "240 GB")
             calFromGB(240);
-        else if (strFacSize == "120GB")
+        else if (strFacSize == "120 GB")
             calFromGB(120);
+        else if (strFacSize == "256 GB")
+            calFromGB(256);
+        else if (strFacSize == "128 GB")
+            calFromGB(128);
+        else if (strFacSize == "64 GB")
+            calFromGB(64);
+        else if (strFacSize == "32 GB")
+            calFromGB(32);
+        else if (strFacSize == "16 GB")
+            calFromGB(16);
+        else if (strFacSize == "8 GB")
+            calFromGB(8);
     }
 
     private void calFromTB(int iTB)

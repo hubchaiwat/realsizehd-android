@@ -6,16 +6,13 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
-
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 
 
 public class MainActivity extends Activity {
 	
-	private Button btn4tb, btn2tb, btn1tb, btn500gb, btn250gb, btn125gb, btn480gb, btn240gb, btn120gb;
-	private EditText sizeTB, sizeGB, sizeMB;
+	private TextView sizeTB, sizeGB, sizeMB;
 	private CConverter cConvert;
 	
 	@Override
@@ -23,18 +20,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		try{
-			sizeTB = (EditText)findViewById(R.id.sizeTB);
-			sizeGB = (EditText)findViewById(R.id.sizeGB);
-			sizeMB = (EditText)findViewById(R.id.sizeMB);
-			btn4tb = (Button)findViewById(R.id.btn_4tb);
-			btn2tb = (Button)findViewById(R.id.btn_2tb);
-			btn1tb = (Button)findViewById(R.id.btn_1tb);
-			btn500gb = (Button)findViewById(R.id.btn_500gb);
-			btn250gb = (Button)findViewById(R.id.btn_250gb);
-			btn125gb = (Button)findViewById(R.id.btn_125gb);
-			btn480gb = (Button)findViewById(R.id.btn_480gb);
-			btn240gb = (Button)findViewById(R.id.btn_240gb);
-			btn120gb = (Button)findViewById(R.id.btn_120gb);
+			sizeTB = (TextView)findViewById(R.id.sizeTB);
+			sizeGB = (TextView)findViewById(R.id.sizeGB);
+			sizeMB = (TextView)findViewById(R.id.sizeMB);
 		}
 		catch(Exception e){
 			e.printStackTrace();
@@ -46,70 +34,72 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
-		
-		
 	}
 	
-	public void btn4tb_click(View v){
-		cConvert = new CConverter("4TB");
+	private void calSize(String strSize){
+		cConvert = new CConverter(strSize);
 		sizeTB.setText(cConvert.getStringTB());
 		sizeGB.setText(cConvert.getStringGB());
 		sizeMB.setText(cConvert.getStringMB());
 	}
 	
-	public void btn2tb_click(View v){
-		cConvert = new CConverter("2TB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize1_click(View v){
+		calSize("4 TB");
 	}
 	
-	public void btn1tb_click(View v){
-		cConvert = new CConverter("1TB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize2_click(View v){
+		calSize("2 TB");
 	}
 	
-	public void btn500gb_click(View v){
-		cConvert = new CConverter("500GB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize3_click(View v){
+		calSize("1 TB");
 	}
 	
-	public void btn250gb_click(View v){
-		cConvert = new CConverter("250GB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize4_click(View v){
+		calSize("500 GB");
 	}
 	
-	public void btn125gb_click(View v){
-		cConvert = new CConverter("125GB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize5_click(View v){
+		calSize("250 GB");
 	}
 	
-	public void btn480gb_click(View v){
-		cConvert = new CConverter("480GB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize6_click(View v){
+		calSize("125 GB");
 	}
 	
-	public void btn240gb_click(View v){
-		cConvert = new CConverter("240GB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize7_click(View v){
+		calSize("480 GB");
 	}
 	
-	public void btn120gb_click(View v){
-		cConvert = new CConverter("120GB");
-		sizeTB.setText(cConvert.getStringTB());
-		sizeGB.setText(cConvert.getStringGB());
-		sizeMB.setText(cConvert.getStringMB());
+	public void btnSize8_click(View v){
+		calSize("240 GB");
+	}
+	
+	public void btnSize9_click(View v){
+		calSize("120 GB");
+	}
+	
+	public void btnSize10_click(View v){
+		calSize("256 GB");
+	}
+	
+	public void btnSize11_click(View v){
+		calSize("128 GB");
+	}
+	
+	public void btnSize12_click(View v){
+		calSize("64 GB");
+	}
+	
+	public void btnSize13_click(View v){
+		calSize("32 GB");
+	}
+	
+	public void btnSize14_click(View v){
+		calSize("16 GB");
+	}
+	
+	public void btnSize15_click(View v){
+		calSize("8 GB");
 	}
 }

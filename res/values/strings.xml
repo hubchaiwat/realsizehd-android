@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">RealSizeHD</string>
+    <string name="app_name">Real Size HD</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="head1">Harddisk</string>
     <string name="head2">SSD</string>
-    <string name="head3">Real Size</string>
-	<string name="size1">4TB</string>
-    <string name="size2">2TB</string>
-    <string name="size3">1TB</string>
-    <string name="size4">500GB</string>
-    <string name="size5">250GB</string>
-    <string name="size6">125GB</string>
-    <string name="size7">480GB</string>
-    <string name="size8">240GB</string>
-    <string name="size9">120GB</string>
-    <string name="first_run">Please choose size</string>                            
+    <string name="head3">SD Card</string>
+    <string name="head4">Real Size</string>
+	<string name="size1">4 TB</string>
+    <string name="size2">2 TB</string>
+    <string name="size3">1 TB</string>
+    <string name="size4">500 GB</string>
+    <string name="size5">250 GB</string>
+    <string name="size6">125 GB</string>
+    <string name="size7">480 GB</string>
+    <string name="size8">240 GB</string>
+    <string name="size9">120 GB</string>
+    <string name="size10">256 GB</string>
+    <string name="size11">128 GB</string>
+    <string name="size12">64 GB</string>
+    <string name="size13">32 GB</string>
+    <string name="size14">16 GB</string>
+    <string name="size15">8 GB</string>  
+    <string name="first_run">Please select size from above</string>                            
 </resources>
